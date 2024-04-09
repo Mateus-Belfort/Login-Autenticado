@@ -14,7 +14,28 @@
 }
 
 body{
-  background-color: var(--fundo);
+  background: linear-gradient(270deg, #171738, #7180b9, #2e1760, #3423a6);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 42s ease infinite;
+  -moz-animation: AnimationName 42s ease infinite;
+  animation: AnimationName 42s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .container{
@@ -36,10 +57,10 @@ section{
   background-color: var(--border);
   display: flex;
   flex-direction: column;
-  border: .2rem solid var(--darkFont);
-  border-radius: .4rem;
+  border: none;
+  border-radius: .8rem;
   margin: 5rem;
-  padding: .6rem;
+  padding: 3rem;
 }
 
 label{
