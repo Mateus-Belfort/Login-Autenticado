@@ -20,6 +20,7 @@ body{
   -webkit-animation: AnimationName 42s ease infinite;
   -moz-animation: AnimationName 42s ease infinite;
   animation: AnimationName 42s ease infinite;
+  height: 100vh;
 }
 
 @-webkit-keyframes AnimationName {
@@ -69,7 +70,7 @@ label{
 }
 
 .input{
-  padding: .3rem;
+  padding: .4rem;
   border: none;
   border-radius: .5rem;
   margin-bottom: .6rem;
@@ -88,4 +89,13 @@ label{
 .btn:hover{
   background-color: var(--fundo);  
   border: 1px solid var(--font);
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 100vh;
+  background-color: var(--bgFont);
+  color: var(--font);
 }
